@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Los Cabos - Paraíso entre el Mar y el Desierto</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff5f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    nav {
+      background-color: #e60000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #ff3333;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Descubre Los Cabos</h1>
+    <p>Una joya turística entre el Océano Pacífico y el Mar de Cortés</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reservar</a>
+    <a href="#">Hospedaje</a>
+    <a href="#">Gastronomía</a>
+    <a href="#">Mapa</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>¿Qué es Los Cabos?</h2>
+      <p>Los Cabos, ubicado en el estado de Baja California Sur, es uno de los destinos turísticos más exclusivos de México. Es famoso por sus playas, vida nocturna, paisajes desérticos y actividades como buceo, pesca deportiva y golf. Aquí se encuentran Cabo San Lucas y San José del Cabo, conectados por el corredor turístico.</p>
+      <img src="imagenes/loscabos.jpg" alt="Vista del Arco en Los Cabos">
+    </section>
+
+    <section>
+      <h2>Lugares por Visitar</h2>
+      <ul>
+        <li><strong>El Arco:</strong> formación rocosa icónica en el fin de la península.</li>
+        <li><strong>Playa del Amor:</strong> ideal para relajarse o tomar fotos inolvidables.</li>
+        <li><strong>San José del Cabo:</strong> un pueblo con esencia colonial y arte local.</li>
+        <li><strong>Corredor Turístico:</strong> lleno de resorts de lujo y vistas al mar.</li>
+        <li><strong>Avistamiento de Ballenas:</strong> de diciembre a abril, un espectáculo natural.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gastronomía Regional</h2>
+      <p>Los Cabos ofrece una fusión entre cocina mexicana y mariscos frescos. Prueba el ceviche, los tacos de pescado, las almejas chocolatas y la tradicional machaca. También puedes disfrutar cocteles tropicales frente al mar.</p>
+    </section>
+
+    <section>
+      <h2>Opciones de Hospedaje</h2>
+      <p>Hay alternativas para todos los presupuestos:</p>
+      <ul>
+        <li><strong>Resort Todo Incluido:</strong> lujo frente al mar. Desde $4,000 MXN.</li>
+        <li><strong>Hoteles Boutique:</strong> con vistas espectaculares y atención personalizada.</li>
+        <li><strong>Hostales Económicos:</strong> ideales para mochileros y jóvenes viajeros.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Reservación</h2>
+      <form action="https://formsubmit.co/cha22027@uicslp.edu.mx" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="date" name="fecha" required>
+        <select name="hospedaje" required>
+          <option value="">Selecciona tipo de hospedaje</option>
+          <option>Hostal económico</option>
+          <option>Hotel 3 estrellas</option>
+          <option>Resort de lujo</option>
+          <option>Hotel boutique</option>
+        </select>
+        <textarea name="comentarios" placeholder="Comentarios o solicitudes especiales" rows="4"></textarea>
+        <button type="submit" class="btn">Reservar ahora</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde Está Los Cabos?</h2>
+      <p>Está ubicado al sur de la península de Baja California. Puedes llegar por avión al Aeropuerto Internacional de San José del Cabo o en cruceros turísticos.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.735064038795!2d-109.89287278497118!3d22.890533785010006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4aa28c56b47f%3A0xd1f7c775a6212f84!2sEl%20Arco%20de%20Cabo%20San%20Lucas!5e0!3m2!1ses!2smx!4v1718472140000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <a href="Turismo en México.html" class="btn">← Volver al Menú Principal</a>
+  </main>
+
+</body>
+</html>

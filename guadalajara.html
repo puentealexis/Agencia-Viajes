@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guadalajara - Corazón de Jalisco</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #e6f2ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    nav {
+      background-color: #3399ff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #3399ff;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vive Guadalajara</h1>
+    <p>La Perla Tapatía y su encanto tradicional</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reservar</a>
+    <a href="#">Hospedaje</a>
+    <a href="#">Gastronomía</a>
+    <a href="#">Mapa</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Historia de Guadalajara</h2>
+      <p>Fundada en 1542, Guadalajara es una ciudad colonial que ha jugado un papel clave en la historia de México. Es la cuna del mariachi, del tequila y uno de los centros culturales más importantes del país. Su arquitectura, cultura y tradiciones hacen de ella un destino imperdible.</p>
+      <img src="imagenes/guadalajara.jpg" alt="Catedral de Guadalajara">
+    </section>
+
+    <section>
+      <h2>Lugares por Explorar</h2>
+      <ul>
+        <li><strong>Catedral de Guadalajara:</strong> icono histórico y arquitectónico.</li>
+        <li><strong>Teatro Degollado:</strong> símbolo de la cultura jalisciense.</li>
+        <li><strong>Hospicio Cabañas:</strong> Patrimonio de la Humanidad por la UNESCO.</li>
+        <li><strong>Tlaquepaque:</strong> barrio de artesanía, comida y música tradicional.</li>
+        <li><strong>Zoológico de Guadalajara:</strong> uno de los más grandes de Latinoamérica.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gastronomía Local</h2>
+      <p>Guadalajara ofrece delicias como la birria, tortas ahogadas, carne en su jugo y tejuino. La cocina tapatía es una mezcla de tradición y sabor única en México.</p>
+    </section>
+
+    <section>
+      <h2>¿Dónde Hospedarse?</h2>
+      <p>La ciudad tiene una amplia oferta para todos los gustos y presupuestos:</p>
+      <ul>
+        <li><strong>Hotel Riu Plaza:</strong> moderno y lujoso, ideal para negocios o placer.</li>
+        <li><strong>Hotel Morales:</strong> clásico, elegante y en el corazón del centro histórico.</li>
+        <li><strong>Hostales boutique:</strong> en barrios como Chapultepec o Americana.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Reservación</h2>
+      <form action="https://formsubmit.co/cha22027@uicslp.edu.mx" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="date" name="fecha" required>
+        <select name="hospedaje" required>
+          <option value="">Selecciona tipo de hospedaje</option>
+          <option>Hotel económico</option>
+          <option>Hotel 3 estrellas</option>
+          <option>Hotel de lujo</option>
+          <option>Hostal boutique</option>
+        </select>
+        <textarea name="comentarios" placeholder="Comentarios o solicitudes especiales" rows="4"></textarea>
+        <button type="submit" class="btn">Reservar ahora</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde Está Guadalajara?</h2>
+      <p>Ubicada en el estado de Jalisco, en el occidente de México. Conectada por carretera y aeropuerto con todo el país.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.7496206072367!2d-103.34960972492554!3d20.676403401236503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428adf9be0cbd29%3A0xd338eb6718c8ce2e!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses!2smx!4v1718483020000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <a href="Turismo en México.html" class="btn">← Volver al Menú Principal</a>
+  </main>
+
+</body>
+</html>
+

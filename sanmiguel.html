@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>San Miguel de Allende - Encanto Colonial</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f4fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    nav {
+      background-color: #b96fe7;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #6a0dad;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>San Miguel de Allende</h1>
+    <p>Ciudad Patrimonio llena de arte, historia y color</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reservar</a>
+    <a href="#">Hospedaje</a>
+    <a href="#">Gastronomía</a>
+    <a href="#">Mapa</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Historia de San Miguel de Allende</h2>
+      <p>San Miguel de Allende, ubicado en Guanajuato, es una joya colonial reconocida por su arquitectura barroca y su ambiente artístico. Fundada en el siglo XVI, tuvo un papel clave en la independencia de México y es hoy Patrimonio de la Humanidad por la UNESCO.</p>
+      <img src="imagenes/sanmiguel.jpg" alt="Parroquia de San Miguel Arcángel">
+    </section>
+
+    <section>
+      <h2>Lugares por Visitar</h2>
+      <ul>
+        <li><strong>Parroquia de San Miguel Arcángel:</strong> símbolo icónico de la ciudad.</li>
+        <li><strong>El Jardín Principal:</strong> lugar de encuentro lleno de vida.</li>
+        <li><strong>Fábrica La Aurora:</strong> centro de arte y galerías.</li>
+        <li><strong>Mirador:</strong> vista panorámica espectacular de la ciudad.</li>
+        <li><strong>Santuario de Atotonilco:</strong> a solo 15 minutos, declarado Patrimonio Mundial.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gastronomía Local</h2>
+      <p>La cocina de San Miguel mezcla sabores tradicionales y modernos. Prueba enchiladas mineras, nieves artesanales, y platillos gourmet con ingredientes orgánicos en sus múltiples restaurantes.</p>
+    </section>
+
+    <section>
+      <h2>Opciones de Hospedaje</h2>
+      <p>Desde hoteles de lujo hasta hostales con encanto:</p>
+      <ul>
+        <li><strong>Rosewood San Miguel:</strong> hotel de 5 estrellas con vista al centro histórico.</li>
+        <li><strong>Hostal La Catrina:</strong> opción económica con excelente ubicación.</li>
+        <li><strong>Hotel Boutique Casa Mia:</strong> estilo colonial y atención personalizada.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Reservación</h2>
+      <form action="https://formsubmit.co/cha22027@uicslp.edu.mx" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="date" name="fecha" required>
+        <select name="hospedaje" required>
+          <option value="">Selecciona tipo de hospedaje</option>
+          <option>Hostal económico</option>
+          <option>Hotel 3 estrellas</option>
+          <option>Hotel boutique</option>
+          <option>Hotel de lujo</option>
+        </select>
+        <textarea name="comentarios" placeholder="Comentarios o solicitudes especiales" rows="4"></textarea>
+        <button type="submit" class="btn">Reservar ahora</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde Está San Miguel?</h2>
+      <p>Se encuentra en el estado de Guanajuato, a unas 3 horas de Ciudad de México. Puedes llegar en autobús o auto desde León, Querétaro o CDMX.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0918741334944!2d-100.74386308471076!3d20.914012686052507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa18321b8decb%3A0x7a5b7d7a6d68de3d!2sSan%20Miguel%20de%20Allende%2C%20Gto.!5e0!3m2!1ses!2smx!4v1718486582000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <a href="Turismo en México.html" class="btn">← Volver al Menú Principal</a>
+  </main>
+
+</body>
+</html>

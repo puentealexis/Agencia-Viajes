@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teotihuacán - Ciudad de los Dioses</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: ##eef6ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    nav {
+      background-color: #1ed30c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #1ed30c;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #17ff00;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Descubre Teotihuacán</h1>
+    <p>Una de las joyas históricas más impresionantes de México</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reservar</a>
+    <a href="#">Hospedaje</a>
+    <a href="#">Gastronomía</a>
+    <a href="#">Mapa</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Historia de Teotihuacán</h2>
+      <p>Teotihuacán fue una gran metrópoli del México prehispánico, con una población de más de 100,000 habitantes en su apogeo. Su influencia cultural y comercial se extendió por toda Mesoamérica. A pesar de que se desconoce quiénes la fundaron, su legado arquitectónico sigue impactando a quienes la visitan.</p>
+      <img src="imagenes/teotihuacan.jpg" alt="Vista aérea de Teotihuacán">
+    </section>
+
+    <section>
+      <h2>Lugares por Explorar</h2>
+      <ul>
+        <li><strong>Pirámide del Sol:</strong> una de las más grandes del mundo.</li>
+        <li><strong>Pirámide de la Luna:</strong> ofrece una vista espectacular del valle.</li>
+        <li><strong>Templo de Quetzalcóatl:</strong> conocido por sus esculturas decorativas.</li>
+        <li><strong>Calzada de los Muertos:</strong> la arteria principal de la ciudad antigua.</li>
+        <li><strong>Museo de Sitio:</strong> alberga piezas originales halladas en el lugar.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gastronomía Local</h2>
+      <p>En Teotihuacán puedes disfrutar de antojitos tradicionales como quesadillas, tlacoyos y barbacoa. También puedes probar bebidas ancestrales como el pulque, muy típico en la región.</p>
+    </section>
+
+    <section>
+      <h2>¿Dónde Hospedarse?</h2>
+      <p>Teotihuacán cuenta con diversas opciones para todo tipo de viajero:</p>
+      <ul>
+        <li><strong>Hotel Boutique Quinto Sol:</strong> ideal para parejas y familias. Desde $1,200 MXN.</li>
+        <li><strong>Hostal Teotihuacán:</strong> opción económica desde $350 MXN por noche.</li>
+        <li><strong>Glamping Teotihuacán:</strong> una experiencia diferente cerca de las pirámides.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Reservación</h2>
+      <form action="https://formsubmit.co/cha22027@uicslp.edu.mx" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="date" name="fecha" required>
+        <select name="hospedaje" required>
+          <option value="">Selecciona tipo de hospedaje</option>
+          <option>Hostal económico</option>
+          <option>Hotel 3 estrellas</option>
+          <option>Hotel boutique</option>
+          <option>Glamping</option>
+        </select>
+        <textarea name="comentarios" placeholder="Comentarios o solicitudes especiales" rows="4"></textarea>
+        <button type="submit" class="btn">Reservar ahora</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde Está Teotihuacán?</h2>
+      <p>Ubicado a solo 50 km al noreste de Ciudad de México. Puedes llegar en autobús, auto o en tours organizados.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2479049711516!2d-98.843873!3d19.6926644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f0ff21d9d159%3A0x92bb0f5d6a647183!2sZona%20Arqueol%C3%B3gica%20de%20Teotihuacan!5e0!3m2!1ses!2smx!4v1718481580000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <a href="Turismo en México.html" class="btn">← Volver al Menú Principal</a>
+  </main>
+
+</body>
+</html>
+

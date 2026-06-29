@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chichén Itzá - Maravilla Maya</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff7f0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    nav {
+      background-color: #ff6600;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #ff6600;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explora Chichén Itzá</h1>
+    <p>Una de las Siete Maravillas del Mundo Moderno</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reservar</a>
+    <a href="#">Hospedaje</a>
+    <a href="#">Gastronomía</a>
+    <a href="#">Mapa</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Historia de Chichén Itzá</h2>
+      <p>Chichén Itzá fue una ciudad sagrada maya, ubicada en la península de Yucatán. Alcanzó su apogeo entre los siglos IX y XII, y es reconocida por su imponente arquitectura y simbolismo astronómico. El Templo de Kukulkán es su estructura más famosa, y cada equinoccio produce un efecto visual único en sus escalinatas.</p>
+      <img src="imagenes/chichenitza.jpg" alt="Pirámide de Kukulkán en Chichén Itzá">
+    </section>
+
+    <section>
+      <h2>Lugares por Explorar</h2>
+      <ul>
+        <li><strong>El Castillo (Kukulkán):</strong> símbolo de la cultura maya y maravilla mundial.</li>
+        <li><strong>El Observatorio:</strong> evidencia del conocimiento astronómico maya.</li>
+        <li><strong>Juego de Pelota:</strong> el más grande de Mesoamérica.</li>
+        <li><strong>Cenote Sagrado:</strong> lugar ceremonial de gran importancia.</li>
+        <li><strong>Templo de los Guerreros:</strong> complejo arquitectónico impresionante.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gastronomía Local</h2>
+      <p>La región ofrece delicias yucatecas como la cochinita pibil, panuchos, salbutes y sopa de lima. Además, puedes probar bebidas tradicionales como el pozol y el xtabentún.</p>
+    </section>
+
+    <section>
+      <h2>¿Dónde Hospedarse?</h2>
+      <p>Chichén Itzá cuenta con opciones variadas para hospedarte:</p>
+      <ul>
+        <li><strong>Hotel Mayaland:</strong> lujo a pocos metros de la zona arqueológica. Desde $2,000 MXN.</li>
+        <li><strong>Hostal Piste:</strong> opción económica con buena ubicación.</li>
+        <li><strong>Ecohotel Villas Arqueológicas:</strong> ideal para una experiencia tranquila y natural.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Reservación</h2>
+      <form action="https://formsubmit.co/cha22027@uicslp.edu.mx" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="date" name="fecha" required>
+        <select name="hospedaje" required>
+          <option value="">Selecciona tipo de hospedaje</option>
+          <option>Hostal económico</option>
+          <option>Hotel 3 estrellas</option>
+          <option>Hotel boutique</option>
+          <option>Ecohotel</option>
+        </select>
+        <textarea name="comentarios" placeholder="Comentarios o solicitudes especiales" rows="4"></textarea>
+        <button type="submit" class="btn">Reservar ahora</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde Está Chichén Itzá?</h2>
+      <p>Ubicado en el estado de Yucatán, cerca de la ciudad de Valladolid. Es accesible desde Mérida, Cancún y Playa del Carmen.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.819624202729!2d-88.56778218507178!3d20.684284986182246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5138d6cd1546d9%3A0x8c623f9833bfa17b!2sChich%C3%A9n%20Itz%C3%A1!5e0!3m2!1ses!2smx!4v1718472020000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <a href="Turismo en México.html" class="btn">← Volver al Menú Principal</a>
+  </main>
+
+</body>
+</html>

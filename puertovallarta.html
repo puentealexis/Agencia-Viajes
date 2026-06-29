@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puerto Vallarta - Paraíso en la Costa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #eef6ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    nav {
+      background-color: #0066cc;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #0066cc;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Puerto Vallarta</h1>
+    <p>Un destino mágico entre el mar y la montaña</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reservar</a>
+    <a href="#">Hospedaje</a>
+    <a href="#">Gastronomía</a>
+    <a href="#">Mapa</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>¿Qué es Puerto Vallarta?</h2>
+      <p>Puerto Vallarta es un famoso destino turístico en la costa del Pacífico mexicano, conocido por sus playas doradas, su vibrante vida nocturna, y su encantador malecón. Es el lugar ideal para disfrutar tanto de la naturaleza como de la cultura local.</p>
+      <img src="imagenes/puertovallarta.jpg" alt="Vista de Puerto Vallarta desde la playa">
+    </section>
+
+    <section>
+      <h2>Actividades Recomendadas</h2>
+      <ul>
+        <li><strong>Malecón:</strong> paseo lleno de esculturas, artistas y restaurantes frente al mar.</li>
+        <li><strong>Playa Los Muertos:</strong> una de las más famosas y con más ambiente.</li>
+        <li><strong>Avistamiento de ballenas:</strong> en temporada, una experiencia inolvidable.</li>
+        <li><strong>Islas Marietas:</strong> para practicar snorkel y admirar la biodiversidad marina.</li>
+        <li><strong>Zona Romántica:</strong> con bares, galerías y ambiente bohemio.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gastronomía Local</h2>
+      <p>En Puerto Vallarta puedes saborear mariscos frescos, pescado zarandeado, tacos de camarón, y postres como el pay de coco. También hay cocina internacional y restaurantes de alta cocina con vista al mar.</p>
+    </section>
+
+    <section>
+      <h2>¿Dónde Hospedarse?</h2>
+      <p>Opciones para todos los gustos y presupuestos:</p>
+      <ul>
+        <li><strong>Hotel Zona Romántica:</strong> ideal para disfrutar del ambiente local.</li>
+        <li><strong>Resorts Todo Incluido:</strong> ubicados frente al mar con acceso privado a la playa.</li>
+        <li><strong>Hostales céntricos:</strong> económicos y cómodos para jóvenes viajeros.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Reservación</h2>
+      <form action="https://formsubmit.co/cha22027@uicslp.edu.mx" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="date" name="fecha" required>
+        <select name="hospedaje" required>
+          <option value="">Selecciona tipo de hospedaje</option>
+          <option>Hostal</option>
+          <option>Hotel 3 estrellas</option>
+          <option>Hotel boutique</option>
+          <option>Resort Todo Incluido</option>
+        </select>
+        <textarea name="comentarios" placeholder="Comentarios o solicitudes especiales" rows="4"></textarea>
+        <button type="submit" class="btn">Reservar ahora</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde Está Puerto Vallarta?</h2>
+      <p>Está ubicado en el estado de Jalisco, a orillas del Océano Pacífico. Puedes llegar en avión, autobús o auto.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.113630820877!2d-105.23439922534924!3d20.61424498091379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842145effffffffff%3A0x6d9348b74e063646!2sPuerto%20Vallarta%2C%20Jal.!5e0!3m2!1ses!2smx!4v1718483200000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <a href="Turismo en México.html" class="btn">← Volver al Menú Principal</a>
+  </main>
+
+</body>
+</html>
