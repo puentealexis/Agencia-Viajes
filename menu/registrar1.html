@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar - Turismo en México</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #ff6600;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .registro-contenedor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+    }
+
+    .formulario {
+      background-image: url('imagenes/fondo-formulario.jpg'); /* imagen con textura clara */
+      background-size: cover;
+      background-position: center;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      background-repeat: no-repeat;
+    }
+
+    .formulario h2 {
+      color: #333;
+      margin-bottom: 20px;
+      background-color: rgba(255,255,255,0.8);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    input, button {
+      padding: 12px;
+      margin: 10px 0;
+      width: 90%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e05500;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      input, button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Turismo en México</h1>
+  <p>Descubre los mejores lugares de nuestro país</p>
+</header>
+
+  <nav>
+    <a href="Turismo en México.html" target="_blank">Inicio</a>
+    <a href="menu/registrar.html" target="_blank">Registrar</a>
+    <a href="menu/ayuda.html" target="_blank">Ayuda</a>
+    <a href="menu/tusviajes.html" target="_blank">Tus Viajes</a>
+    <a href="menu/ofertas.html" target="_blank">Ofertas</a>
+  </nav>
+
+<section class="registro-contenedor">
+  <div class="formulario">
+    <h2>Registro de Usuario</h2>
+    <input type="text" placeholder="Nombre completo">
+    <input type="email" placeholder="Correo electrónico">
+    <input type="password" placeholder="Contraseña">
+    <button>Registrar</button>
+  </div>
+</section>
+
+<div style="text-align: center; margin: 30px;">
+  <a href="Turismo en México.html">
+    <button style="padding: 12px 20px; background-color: #ff6600; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+      Regresar al menú principal
+    </button>
+  </a>
+</div>
+
+<footer>
+  <p>© 2025 Turismo México | Diseñado para inspirarte a viajar.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ff6600;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('fondo.jpg'); /* imagen local */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .search-bar {
+      margin-top: 20px;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      margin: 5px;
+      width: 200px;
+    }
+
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .destination {
+      background-color: white;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .destination img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destination h3 {
+      padding: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .destinations {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AGENCIA DE VIAJES</h1>
+    <p>La agencia de viajes online número 1</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Registrar</a>
+    <a href="#">Ayuda</a>
+    <a href="#">Tus Viajes</a>
+    <a href="#">Ofertas</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Let us show you the world</h1>
+    <p>¡Encuentra tu destino ideal hoy mismo!</p>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar destino...">
+      <input type="date">
+      <input type="date">
+      <button style="padding:10px;background:#ff6600;border:none;color:white;font-weight:bold;">Buscar</button>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <div class="destination">
+      <img src="Londres.jpg" alt="Londres">
+      <h3>Londres</h3>
+    </div>
+    <div class="destination">
+      <img src="porto.jpg" alt="Porto">
+      <h3>Porto</h3>
+    </div>
+    <div class="destination">
+      <img src="roma.jpg" alt="Roma">
+      <h3>Roma</h3>
+    </div>
+    <div class="destination">
+      <img src="Paris.jpg" alt="Paris">
+      <h3>Paris</h3>
+    </div>
+ <div class="destination">
+      <img src="atenas.jpg" alt="Atenas">
+      <h3>Atenas</h3>
+    </div>
+ <div class="destination">
+      <img src="riodejaneiro.jpg" alt="Rio de Janeiro">
+      <h3>Rio de Janeiro</h3>
+    </div>
+ <div class="destination">
+      <img src="murallachina.jpg" alt="Muralla China">
+      <h3>Muralla China</h3>
+    </div>
+ <div class="destination">
+      <img src="vietnam.jpg" alt="Vietnam">
+      <h3>Vietnam</h3>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Agencia de viajes. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

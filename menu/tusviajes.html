@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tus Viajes - Turismo en México</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('../imagenes/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav {
+      background-color: #ff6600;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .contenido {
+      margin: 50px auto 20px;
+      padding: 40px 20px;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      color: #000;
+    }
+    .viaje {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #000;
+    }
+    .viaje button {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Turismo en México</h1>
+  <p>Descubre los mejores lugares de nuestro país</p>
+</header>
+
+<nav>
+  <a href="../index.html">Inicio</a>
+  <a href="registrar.html">Registrar</a>
+  <a href="ayuda.html">Ayuda</a>
+  <a href="tusviajes.html">Tus Viajes</a>
+  <a href="ofertas.html">Ofertas</a>
+</nav>
+
+<section class="contenido">
+  <h2>Mis viajes reservados</h2>
+
+  <div class="viaje">
+    <h3>Viaje a Cancún</h3>
+    <p>Fechas: 15 al 20 de julio</p>
+    <button>Cancelar</button>
+  </div>
+
+  <div class="viaje">
+    <h3>Viaje a Teotihuacán</h3>
+    <p>Fechas: 1 al 3 de agosto</p>
+    <button>Cancelar</button>
+  </div>
+</section>
+
+<div style="text-align: center; margin: 30px;">
+  <a href="../index.html">
+    <button style="padding: 12px 20px; background-color: #ff6600; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+      Regresar al menú principal
+    </button>
+  </a>
+</div>
+
+<footer>
+  <p>© 2025 Turismo México | Diseñado para inspirarte a viajar.</p>
+</footer>
+
+</body>
+</html>

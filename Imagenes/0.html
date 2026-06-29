@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cancún - Paraíso Caribeño</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #e0f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000000, #333);
+      color: white;
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    nav {
+      background-color: #00bfa5;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #00bfa5;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #00bfa5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a Cancún</h1>
+    <p>Un paraíso caribeño en la costa de México</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reservar</a>
+    <a href="#">Hospedaje</a>
+    <a href="#">Gastronomía</a>
+    <a href="#">Mapa</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Historia de Cancún</h2>
+      <p>Cancún, situado en la Península de Yucatán, fue originalmente una región habitada por los mayas. A partir de los años 70, el gobierno mexicano impulsó su desarrollo turístico convirtiéndolo en uno de los destinos más visitados del mundo gracias a sus playas de arena blanca y aguas turquesas.</p>
+      <img src="imagenes/cancun.jpg" alt="Playa de Cancún">
+    </section>
+
+    <section>
+      <h2>Actividades y Lugares para Visitar</h2>
+      <ul>
+        <li><strong>Isla Mujeres:</strong> Ideal para bucear y relajarse.</li>
+        <li><strong>Zona Hotelera:</strong> Centros comerciales, playas y vida nocturna.</li>
+        <li><strong>Chichén Itzá:</strong> A pocas horas de Cancún, una maravilla del mundo.</li>
+        <li><strong>Cenotes:</strong> Perfectos para nadar en aguas cristalinas.</li>
+        <li><strong>Parque Xcaret:</strong> Eco-parque con espectáculos culturales y actividades acuáticas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gastronomía Local</h2>
+      <p>Disfruta de platillos como el ceviche, tacos de pescado, cochinita pibil y marquesitas. Además, prueba bebidas como el agua de chaya o el tradicional tequila y mezcal.</p>
+    </section>
+
+    <section>
+      <h2>Opciones de Hospedaje</h2>
+      <p>Cancún tiene hospedaje para todos los gustos:</p>
+      <ul>
+        <li><strong>Hotel All-Inclusive Paradisus:</strong> lujo y confort desde $5,000 MXN la noche.</li>
+        <li><strong>Hostal Selina Downtown:</strong> opción económica desde $500 MXN.</li>
+        <li><strong>Resorts frente al mar:</strong> para disfrutar de la vista y acceso directo a la playa.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulario de Reservación</h2>
+      <form action="https://formsubmit.co/cha22027@uicslp.edu.mx" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="date" name="fecha" required>
+        <select name="hospedaje" required>
+          <option value="">Selecciona tipo de hospedaje</option>
+          <option>Hostal económico</option>
+          <option>Hotel 3 estrellas</option>
+          <option>Hotel de lujo</option>
+          <option>Resort todo incluido</option>
+        </select>
+        <textarea name="comentarios" placeholder="Comentarios o solicitudes especiales" rows="4"></textarea>
+        <button type="submit" class="btn">Reservar ahora</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde Está Cancún?</h2>
+      <p>Ubicado en el estado de Quintana Roo, Cancún está conectado por un aeropuerto internacional y es accesible por carretera desde toda la península de Yucatán.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4291772985094!2d-86.850605!3d21.1619089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2be4f6d2e3c5%3A0xfdd1cc4e89e13b77!2sCanc%C3%BAn%2C%20Quintana%20Roo!5e0!3m2!1ses!2smx!4v1718735829000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <a href="Turismo en México.html" class="btn">← Volver al Menú Principal</a>
+  </main>
+
+</body>
+</html>

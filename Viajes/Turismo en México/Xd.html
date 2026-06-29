@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo en México</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ff6600;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .search-bar {
+      margin-top: 20px;
+    }
+
+    .search-bar input, .search-bar button {
+      padding: 10px;
+      margin: 5px;
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .search-bar button {
+      background: #ff6600;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .destination {
+      background-color: white;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .destination:hover {
+      transform: scale(1.05);
+    }
+
+    .destination img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destination h3 {
+      padding: 10px;
+      margin: 0;
+    }
+
+    .about, .testimonials, .contact {
+      background-color: white;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .about h2, .testimonials h2, .contact h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .testimonial {
+      margin: 10px 0;
+      padding: 10px;
+      border-left: 4px solid #ff6600;
+      background-color: #f9f9f9;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .destinations {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Turismo en México</h1>
+    <p>Descubre los mejores lugares de nuestro país</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Registrar</a>
+    <a href="#">Ayuda</a>
+    <a href="#">Tus Viajes</a>
+    <a href="#">Ofertas</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Explora México como nunca antes</h1>
+    <p>¡Encuentra tu destino ideal hoy mismo!</p>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar destino...">
+      <input type="date">
+      <input type="date">
+      <button>Buscar</button>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <div class="destination"><img src="teotihuacan.jpg"><h3>Teotihuacán</h3></div>
+    <div class="destination"><img src="cancun.jpg"><h3>Cancún</h3></div>
+    <div class="destination"><img src="sanmiguel.jpg"><h3>San Miguel de Allende</h3></div>
+    <div class="destination"><img src="chichenitza.jpg"><h3>Chichén Itzá</h3></div>
+    <div class="destination"><img src="riveramaya.jpg"><h3>Riviera Maya</h3></div>
+    <div class="destination"><img src="guadalajara.jpg"><h3>Guadalajara</h3></div>
+    <div class="destination"><img src="loscabos.jpg"><h3>Los Cabos</h3></div>
+    <div class="destination"><img src="puertovallarta.jpg"><h3>Puerto Vallarta</h3></div>
+  </section>
+
+  <section class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una agencia de viajes apasionada por mostrarte lo mejor de México. Nuestro objetivo es brindarte experiencias únicas, seguras y personalizadas para que cada viaje sea inolvidable.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimonios</h2>
+    <div class="testimonial"><strong>Lucía G.:</strong> "Una experiencia increíble, todo fue perfecto. ¡Repetiré con ustedes!"</div>
+    <div class="testimonial"><strong>Roberto M.:</strong> "El viaje a Cancún fue espectacular. Excelente atención al cliente."</div>
+  </section>
+
+  <section class="contact">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o quieres planear tu viaje? Escríbenos a <strong>contacto@turismomexico.com</strong> o llama al <strong>800-123-4567</strong>.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Turismo México | Diseñado para inspirarte a viajar.</p>
+  </footer>
+
+</body>
+</html>
+
